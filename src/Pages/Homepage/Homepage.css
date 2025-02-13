@@ -1,0 +1,138 @@
+.home-intro {
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-header {
+    font-size: 4rem;
+}
+
+.home-content,
+.home-image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content button {
+    width: 140px;
+    padding: 8px 20px;
+    border-radius: 0px 22px 0px 22px;
+    background: none;
+    transition: .4s all ease-in-out;
+}
+
+.home-content button a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-content button:hover {
+    background-color: black;
+    border-radius: 22px 0px 22px 0px;
+}
+
+.home-content button:hover a {
+    color: white;
+}
+
+.home-image img {
+    width: 100%;
+}
+
+.card-section {
+    margin: 20px 0px;
+}
+
+.card-item {
+    max-width: 400px;
+    height: 400px;
+    border: 1px solid lightgray;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .4s all ease;
+}
+
+.card-item:hover {
+    background-color: #07c3f6;
+    box-shadow: 2px 2px 2px gray;
+    color: white;
+}
+
+.welcome-page .welcome-div {
+    width: 50%;
+}
+
+.welcome-text {
+    padding: 0px 16px;
+}
+
+.underline {
+    width: 100px;
+    height: 3px;
+    background-color: orangered;
+}
+
+.welcome-div button {
+    width: 160px;
+    padding: 8px 20px;
+    border-radius: 2rem;
+    background: linear-gradient(to right, orange, orangered);
+    border: none;
+    transition: 1s all ease;
+}
+
+.welcome-div button:hover {
+    background: linear-gradient(to right, orangered, orange);
+}
+
+.welcome-img img {
+    padding: 0px 16px;
+    width: 99%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .home-intro {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .home-intro div {
+        width: 100%;
+    }
+
+    .home-image img {
+        display: none;
+    }
+
+    .home-header {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 18px !important;
+    }
+
+    .welcome-page {
+        flex-direction: column !important;
+    }
+
+    .welcome-page .welcome-div {
+        width: 100%;
+    }
+
+    .welcome-img {
+        display: none;
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+
+
+}
