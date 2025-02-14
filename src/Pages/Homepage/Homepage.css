@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
 .home-intro {
     height: 85vh;
     display: flex;
@@ -108,9 +115,17 @@
 
 .interest {
     height: fit-content;
-    width: 100vw;
-    border: 1px solid black;
+    width: 100%;
 }
+
+.interest-desc {
+    padding-left: 8px;
+}
+
+.interest-desc p {
+    width: 80%;
+}
+
 
 .interest-div h3 {
     text-transform: uppercase;
@@ -134,7 +149,7 @@
 .about-desc {
     flex-grow: 2;
     display: flex;
-    padding-left: 10px;
+    padding-left: 16px;
 }
 
 .about-desc h1 {
@@ -168,7 +183,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
     .home-intro {
         flex-direction: column;
         height: fit-content;
@@ -188,6 +203,115 @@
 
     .home-content p {
         font-size: 18px !important;
+    }
+
+    .welcome-page {
+        height: fit-content;
+        flex-direction: column !important;
+    }
+
+    .welcome-page .welcome-div {
+        width: 100%;
+    }
+
+    .welcome-img img{
+        display: none;
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 567px) {
+    .home-intro {
+        flex-direction: column !important;
+        height: calc(100vh - 140px);
+    }
+
+    .home-intro div {
+        width: 100%;
+    }
+
+    .home-image {
+        display: none;
+        border: 1px solid black;
+    }
+
+    .home-image img {
+        display: block;
+        max-width: 300px;
+    }
+
+    .home-header {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 18px !important;
+    }
+
+    .card-item p {
+        font-size: 1rem !important;
+    }
+
+    .welcome-page {
+        height: fit-content;
+        flex-direction: column !important;
+    }
+
+    .welcome-page .welcome-div {
+        width: 100%;
+    }
+
+    .welcome-img img{
+        display: none;
+    }
+
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-text p {
+        font-size: 1.1rem !important;
+    }
+
+    .interest {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .interest-desc p {
+        font-size: 1rem !important;
+    }
+
+    .interest-img img {
+        width: 100%;
+    }
+
+    .about {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-desc {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .about-desc h1 {
+        font-size: 1.2rem;
+        margin-top: 8px;
+    }
+
+    .about-desc header {
+        font-size: 2.5rem;
     }
 
     .welcome-page {

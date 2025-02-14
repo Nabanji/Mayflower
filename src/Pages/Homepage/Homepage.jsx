@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar'
 import '../Homepage/Homepage.css'
+import Footer from'../../components/Footer/Footer'
 import { PiHandHeartDuotone } from "react-icons/pi";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +26,7 @@ export default function Homepage() {
             <Navbar />
             <div className="container">
 
-                <div className="home-intro" data-aos="zoom-in-up">
+                <section className="home-intro" data-aos="zoom-in-up">
                     <div className="home-content">
                         <h1 className='home-header'>Small efforts make <br />big <span style={{color: '#07c3f6'}}>change</span></h1>
                         <p className='fs-4'>Improving young children's education, health and well-being through education, nutrition and recreational programs.</p>
@@ -34,10 +35,10 @@ export default function Homepage() {
                     <div className="home-image">
                         <img src={placeHolder} width={500} height={400} alt="Home Image" />
                     </div>
-                </div>
+                </section>
 
 
-                <div className="container d-flex flex-wrap justify-content-center gap-3 card-section">
+                <section className="container d-flex flex-wrap justify-content-center gap-3 card-section">
                     <div className='card-item d-flex flex-column justify-content-center align-items-center text-center'data-aos="fade-up" >
                         <PiHandHeartDuotone size={100}/>
                         <h2 className="h4">Become a Volunteer</h2>
@@ -64,10 +65,10 @@ export default function Homepage() {
                             provide resources, and create lasting change in communities.
                         </p>
                     </div>
-                </div>
+                </section>
 
 
-                <div className="welcome-page container d-flex flex-wrap align-items-center justify-content-between my-5">
+                <section className="welcome-page container d-flex flex-wrap align-items-center justify-content-between my-5">
 
                     <div className="welcome-div welcome-text d-flex flex-column justify-content-center" data-aos="fade-left">
                         <h1>Welcome to our charity</h1>
@@ -83,21 +84,21 @@ export default function Homepage() {
                         <img src={placeHolder} height={500} alt="Welcome Image" />
                     </div>
 
-                </div>
+                </section>
 
-                {/* <div className="container interest d-flex">
-                    <div className="interest-div d-flex flex-column justify-content-center">
+                <section className="interest d-flex">
+                    <div className="interest-div interest-desc d-flex flex-column justify-content-center" data-aos='fade-right'>
                         <h3 className='fs-5'>community first approach</h3>
                         <h1>We raise funds with the aim of helping children achieve their dreams.</h1>
-                        <p>Children can achieve their dreams and we should be doing all we can to ensure they do.</p>
+                        <p className='fs-5'>Children can achieve their dreams and we should be doing all we can to ensure they do.</p>
                     </div>
-                    <div className="interest-img">
+                    <div className="interest-img" data-aos='fade-left'>
                         <img src={communityImage} alt="Gikambura Football" />
                     </div>
-                </div> */}
+                </section>
 
 
-                <div className="container about d-flex justify-content-between align-items-center my-5">
+                <section className="container about d-flex justify-content-between align-items-center my-5">
 
                     <div className="about-div about-image d-flex justify-content-center align-items-center" data-aos="zoom-in-down"> 
                         <img src={aboutImage} alt="About Image" />
@@ -123,7 +124,9 @@ export default function Homepage() {
                         </div>
                     </div>
 
-                </div>
+                </section>
+
+                <Footer />
 
             </div>
         </>

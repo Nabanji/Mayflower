@@ -1,0 +1,93 @@
+.intro {
+    color: black;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    color: #07c3f6;
+}
+
+.intro p {
+    width: 70%;
+}
+
+.intro button {
+    width: 120px;
+    padding: 6px 16px;
+    background: none;
+    border: none;
+    background-color: #07c3f6;
+    transition: .6s all ease;
+}
+
+.intro button:hover {
+    color: white;
+    border: 1px solid #07c3f6;
+}
+
+.intro button a {
+    text-decoration: none;
+    color: black;
+}
+
+.links h1 {
+    color: rgb(99, 99, 99);
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    padding: 6px 0px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .6s all ease-in-out;
+}
+
+.links ul li a:hover {
+    padding-left: 6px;
+    color: #07c3f6;
+}
+
+.location h1 {
+    color: rgb(99, 99, 99);
+}
+
+.social-icon {
+    transition: .6s all ease;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    color: orangered;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p {
+    margin: auto 0;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+    .major {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 26px;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+}
