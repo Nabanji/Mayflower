@@ -5,7 +5,10 @@ import { PiHandHeartDuotone } from "react-icons/pi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import aboutImage from '../../assets/about.png';
 import placeHolder from '../../assets/placeholder.png';
+import gikamburaFootball from '../../assets/gikambura.png';
+import communityImage from '../../assets/community.png';
 
 
 export default function Homepage() {
@@ -32,6 +35,7 @@ export default function Homepage() {
                         <img src={placeHolder} width={500} height={400} alt="Home Image" />
                     </div>
                 </div>
+
 
                 <div className="container d-flex flex-wrap justify-content-center gap-3 card-section">
                     <div className='card-item d-flex flex-column justify-content-center align-items-center text-center'data-aos="fade-up" >
@@ -62,19 +66,61 @@ export default function Homepage() {
                     </div>
                 </div>
 
+
                 <div className="welcome-page container d-flex flex-wrap align-items-center justify-content-between my-5">
 
-                    <div className="welcome-div welcome-img" data-aos="fade-right">
-                        <img src={placeHolder} height={400} alt="Welcome Image" />
-                    </div>
-
-                    <div className="welcome-div welcome-text" data-aos="fade-left">
+                    <div className="welcome-div welcome-text d-flex flex-column justify-content-center" data-aos="fade-left">
                         <h1>Welcome to our charity</h1>
                         <div className="underline"></div>
                         <p className='fs-5 my-3'>
+                        Children can achieve their dreams and we should be doing all we can to ensure they do.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.
                         </p>
                         <button>Read More</button>
+                    </div>
+
+                    <div className="welcome-div welcome-img d-flex justify-content-center mt-3" data-aos="fade-right">
+                        <img src={placeHolder} height={500} alt="Welcome Image" />
+                    </div>
+
+                </div>
+
+                {/* <div className="container interest d-flex">
+                    <div className="interest-div d-flex flex-column justify-content-center">
+                        <h3 className='fs-5'>community first approach</h3>
+                        <h1>We raise funds with the aim of helping children achieve their dreams.</h1>
+                        <p>Children can achieve their dreams and we should be doing all we can to ensure they do.</p>
+                    </div>
+                    <div className="interest-img">
+                        <img src={communityImage} alt="Gikambura Football" />
+                    </div>
+                </div> */}
+
+
+                <div className="container about d-flex justify-content-between align-items-center my-5">
+
+                    <div className="about-div about-image d-flex justify-content-center align-items-center" data-aos="zoom-in-down"> 
+                        <img src={aboutImage} alt="About Image" />
+                    </div>
+
+                    <div className="about-div about-desc d-flex flex-column justify-content-center" data-aos='zoom-in-left'>
+                        <h1 className='mb-2'>How we work</h1>
+                        <header className='mb-2'>We take a community first approach in our activities</header>
+                        
+                        <div className="mission-item ">
+                            <h3>01. Acquire & Maintain Community Links</h3>
+                            <p>We maintain contact with individuals of the communities in which we work to discover their needs and determine the best way to meet them.</p>
+                        </div>
+
+                        <div className="mission-item">
+                            <h3>02. Facilitate Donations from Different Sources</h3>
+                            <p>We reach out to donors and volunteers for help with our programs and logistics.</p>
+                        </div>
+
+                        <div className="mission-item">
+                            <h3>03. Deliver Programs to the Communities in Need</h3>
+                            <p>We utilize the support collected to effect changes in the involved communities.</p>
+                        </div>
                     </div>
 
                 </div>
