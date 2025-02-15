@@ -14,8 +14,7 @@
 .intro button {
     width: 120px;
     padding: 6px 16px;
-    background: none;
-    border: none;
+    border: 1px solid #07c3f6;
     background-color: #07c3f6;
     transition: .6s all ease;
 }
@@ -57,6 +56,11 @@
     color: rgb(99, 99, 99);
 }
 
+.contact {
+    margin: 4px 0px;
+    padding: 2px 30px;
+}
+
 .social-icon {
     transition: .6s all ease;
     cursor: pointer;
@@ -74,10 +78,11 @@
 
 .copyright p {
     margin: auto 0;
-    font-weight: 400;
+    font-style: italic;
+    font-weight: 400 !important;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 567px) {
     .major {
         flex-direction: column;
     }
@@ -87,7 +92,35 @@
     }
 
     .socials {
-        flex-direction: column;
+        flex-direction: row;
     }
 
+    .social-icon {
+        font-size: 16px !important;
+    }
+
+    .socials h1 {
+        font-size: 1rem !important;
+    }
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+    .major {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+
+    .links {
+        margin-top: 26px;
+    }
+
+    .socials {
+        flex-direction: row;
+        padding: 0px 6px;
+    }
+
+    .socials h1 {
+        font-size: 1rem !important;
+    }
 }

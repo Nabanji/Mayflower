@@ -124,7 +124,7 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1023.90px) {
     .brand {
         align-self: flex-start;
     }
@@ -164,6 +164,25 @@
 
     .sidebar ul li {
         margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand a {
+        font-size: 16px !important;
+    }
+
+    .nav-links {
+        padding: 0;
+        margin: 0;
+        gap: 12px;
     }
 
 }
