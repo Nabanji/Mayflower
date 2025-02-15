@@ -23,7 +23,7 @@ export default function Navbar() {
                     {/* Desktop Navbar Links */}
                     <ul className="nav-links">
                         <li className='nav-link'><a href="/">Home</a></li>
-                        <li className='nav-link'><a href="/about">Programs</a></li>
+                        <li className='nav-link'><a href="/programs">Programs</a></li>
                         <li className='nav-link'><a href="#">Partner opportunities</a></li>
                         <li className='nav-link'><a href="#">Team & Volunteers</a></li>
                         <li className='nav-link'><a href="#">Contact</a></li>
@@ -37,7 +37,7 @@ export default function Navbar() {
                 <div className={`sidebar ${sidebar ? "active" : ""}`}>
                     <ul>
                         <li className='nav-link'><a href="/">Home</a></li>
-                        <li className='nav-link'><a href="/about">Programs</a></li>
+                        <li className='nav-link'><a href="/programs">Programs</a></li>
                         <li className='nav-link'><a href="#">Partner opportunities</a></li>
                         <li className='nav-link'><a href="#">Team & Volunteers</a></li>
                         <li className='nav-link'><a href="#">Contact</a></li>

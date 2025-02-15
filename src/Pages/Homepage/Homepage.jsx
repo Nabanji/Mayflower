@@ -8,7 +8,6 @@ import "aos/dist/aos.css";
 
 import aboutImage from '../../assets/about.png';
 import placeHolder from '../../assets/placeholder.png';
-// import gikamburaFootball from '../../assets/gikambura.png';
 import communityImage from '../../assets/community.png';
 
 

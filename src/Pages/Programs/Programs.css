@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.programs-intro {
+    height: 400px;
+    background: url('../../assets/placeholder.png'), rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border: 1px solid black;
+}
+
+.programs-intro ul {
+    gap: 20px;
+}
+
+.programs-intro li a {
+    color: white;
+}
+
+.programs-intro .navbar-brand {
+    color: white;
+}
+
+.programs-intro .btn {
+    color: white;
+    border: none;
+    background-color: #07c3f6;
+}
+
+.programs-heading h1 {
+    color: white;
+    margin: 60px auto;
+    padding: 0px 7rem;
+    font-size: 3rem;
+}
+
+.underline {
+    width: 120px;
+    height: 2px;
+    background-color: orangered;
+}
+
+.program {
+    height: fit-content;
+}
+
+/* .program > div {
+    border: 1px solid black;
+} */
+
+.program-info {
+    padding: 0px 8px;
+}
+
+.program-heading h1 {
+    color: orangered;
+}
+
+.program-heading p {
+    text-transform: uppercase;
+    color: orangered;
+}
+
+.program-description p {
+    font-size: 1.2rem;
+}
+
+.program-img {
+    height: 100%;
+}
+
+.program-img img {
+    max-height: 100%;
+}
