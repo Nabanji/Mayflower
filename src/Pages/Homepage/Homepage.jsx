@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 import aboutImage from '../../assets/about.png';
 import placeHolder from '../../assets/placeholder.png';
-import gikamburaFootball from '../../assets/gikambura.png';
+// import gikamburaFootball from '../../assets/gikambura.png';
 import communityImage from '../../assets/community.png';
 
 
@@ -92,8 +92,8 @@ export default function Homepage() {
                         <h1>We raise funds with the aim of helping children achieve their dreams.</h1>
                         <p className='fs-5'>Children can achieve their dreams and we should be doing all we can to ensure they do.</p>
                     </div>
-                    <div className="interest-img" data-aos='fade-left'>
-                        <img src={communityImage} alt="Gikambura Football" />
+                    <div className="interest-div interest-img" data-aos='fade-left'>
+                        <img src={communityImage} alt="Kiaora children" />
                     </div>
                 </section>
 

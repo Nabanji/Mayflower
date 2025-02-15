@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="intro">
                     <h1 className='fs-6'>mayflower children's foundation</h1>
                     <p className='h2'>Change a child's future now</p>
-                    <button><a href="/">Donate</a></button>
+                    <button>Donate</button>
                 </div>
                 <div className="links">
                     <h1 className='fs-4'>Links</h1>
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
 
             <div className="copyright mt-3">
-                <p className='fs-6'><strong>&copy;{new Date().getFullYear()} Copyright: Mayflower Children's Foundation</strong> </p>
+                <p className='fs-6'>&copy;{new Date().getFullYear()} Copyright: Mayflower Children's Foundation</p>
             </div>
 
         </section>
