@@ -47,34 +47,49 @@
 }
 
 .program {
-    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    padding-top: 20px;
 }
 
-/* .program > div {
-    border: 1px solid black;
-} */
-
-.program-info {
-    padding: 0px 8px;
+.program-card {
+    height: auto;
+    cursor: pointer;
+    transition: .6s all ease-in-out;
+    border-radius: 12px;
+    border: 1px solid lightgray;
 }
 
-.program-heading h1 {
-    color: orangered;
+.program-card:hover {
+    box-shadow: 3px 3px 3px lightgray;
 }
 
-.program-heading p {
-    text-transform: uppercase;
-    color: orangered;
+.program-description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.program-description h4 {
+    font-size: 26px;
 }
 
 .program-description p {
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 
-.program-img {
-    height: 100%;
+.program-description button {
+    background: orangered;
+    width: 150px;
+    padding: 6px 12px;
+    border: 2px solid orangered;
+    transition: .6s all ease-in-out;
 }
 
-.program-img img {
-    max-height: 100%;
+.program-description button:hover {
+    background: none;
 }
