@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.footer {
+    background-color: #07c2f637;
+}
+
 .intro {
     color: black;
 }
@@ -71,13 +82,11 @@
 }
 
 .copyright {
-    position: absolute;
     width: 100%;
     text-align: center;
 }
 
 .copyright p {
-    margin: auto 0;
     font-style: italic;
     font-weight: 400 !important;
 }

@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import '../Programs/Programs.css';
 import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
+import GoogleMap from '../../components/GoogleMaps/GoogleMaps';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -71,6 +73,10 @@ export default function Programs() {
 
                 </div>
             </section>
+
+            <GoogleMap />
+
+            <Footer />
 
         </>
     )
