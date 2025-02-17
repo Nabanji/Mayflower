@@ -10,7 +10,7 @@ import { FaFacebookF } from "react-icons/fa";
 export default function Footer() {
 
     return (
-        <section className="footer my-5" data-aos='fade-up'>
+        <section className="footer d-flex flex-column pt-3" data-aos='fade-up'>
             <div className='d-flex justify-content-around major'>
                 <div className="intro">
                     <h1 className='fs-6'>mayflower children's foundation</h1>
@@ -36,7 +36,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='socials d-flex justify-content-between'>
+            <div className='socials d-flex justify-content-between align-items-center px-4'>
                 <h1 className='fs-4'>Get connected with us on social networks</h1>
                 <div className="social-links d-flex gap-3">
                     <FaInstagram className='social-icon' size={24} />

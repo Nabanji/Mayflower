@@ -5,6 +5,10 @@
     outline: none;
 }
 
+.sidebar-btn {
+    color: white;
+}
+
 .programs-intro {
     height: 400px;
     background: url('../../assets/placeholder.png'), rgba(0, 0, 0, 0.6);
@@ -49,12 +53,16 @@
 .program {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 480px);
     justify-content: center;
+    column-gap: 12px;
+    row-gap: 8px;
+    padding: 0px 6px;
     padding-top: 20px;
 }
 
 .program-card {
+    max-width: 500px;
     height: auto;
     cursor: pointer;
     transition: .6s all ease-in-out;
@@ -92,4 +100,58 @@
 
 .program-description button:hover {
     background: none;
+}
+
+
+
+@media screen and (max-width: 567px) {
+
+    .programs-heading h1 {
+        padding: 0;
+        padding-left: 4px;
+        font-size: 2.5rem;
+    }
+
+    .program {
+        grid-template-columns: repeat(1, 90%);
+        justify-items: center;
+        padding: 4px;
+    }
+
+    .program-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .program-card p {
+        font-size: 1rem;
+        padding: 2px 8px;
+    }
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+    .programs-heading h1 {
+        padding: 0;
+        padding-left: 4px;
+    }
+
+    .program {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .program-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .program-card p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .program {
+        padding: 2px 6px;
+        grid-template-columns: repeat(2, 40%);
+    }
 }

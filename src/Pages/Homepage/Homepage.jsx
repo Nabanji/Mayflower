@@ -23,9 +23,9 @@ export default function Homepage() {
     return (
         <>
             <Navbar />
-            <div className="container">
+            <div>
 
-                <section className="home-intro" data-aos="zoom-in-up">
+                <section className="container home-intro" data-aos="zoom-in-up">
                     <div className="home-content">
                         <h1 className='home-header'>Small efforts make <br />big <span style={{color: '#07c3f6'}}>change</span></h1>
                         <p className='fs-4'>Improving young children's education, health and well-being through education, nutrition and recreational programs.</p>
@@ -39,7 +39,7 @@ export default function Homepage() {
 
                 <section className="container d-flex flex-wrap justify-content-center gap-3 card-section">
                     <div className='card-item d-flex flex-column justify-content-center align-items-center text-center'data-aos="fade-up" >
-                        <PiHandHeartDuotone size={100}/>
+                        <PiHandHeartDuotone size={100} />
                         <h2 className="h4">Become a Volunteer</h2>
                         <p className="fs-5">
                             Make a difference in your community by joining our team of dedicated volunteers. 
@@ -85,7 +85,7 @@ export default function Homepage() {
 
                 </section>
 
-                <section className="interest d-flex">
+                <section className="container interest d-flex">
                     <div className="interest-div interest-desc d-flex flex-column justify-content-center" data-aos='fade-right'>
                         <h3 className='fs-5'>community first approach</h3>
                         <h1>We raise funds with the aim of helping children achieve their dreams.</h1>
