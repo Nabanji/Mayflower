@@ -18,7 +18,7 @@ export default function Homepage() {
           duration: 1500, // Animation duration in milliseconds
           once: true, // Whether animation should happen only once
         });
-      }, []);
+    }, []);
 
     return (
         <>

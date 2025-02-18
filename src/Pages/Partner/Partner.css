@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.partner-intro {
+    height: calc(100vh - 140px);
+}
+
+.partner-heading,
+.partner-image {
+    width: 45%;
+}
+
+.partner-heading {
+    height: 100%;
+}
+
+.partner-heading h1 {
+    font-size: 5rem;
+}
+
+.partner-heading p {
+    font-size: 1.4rem;
+}
+
+.partner-btns button {
+    background: none;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: .6s all ease;
+}
+
+.partner-btns .donate-btn {
+    width: 160px;
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+
+.partner-btns .volunteer-btn {
+    width: 200px;
+    border: 1px solid #07c3f6;
+}
+
+.partner-btns .donate-btn:hover {
+    background: none;
+}
+
+.partner-btns .volunteer-btn:hover {
+    background: none;
+    background: #07c3f6;
+}
+
+.partner-image {
+    height: 100%;
+}
+
+.partner-image img {
+    height: 100%;
+}

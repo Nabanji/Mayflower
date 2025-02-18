@@ -24,7 +24,7 @@ export default function Navbar() {
                     <ul className="nav-links">
                         <li className='nav-link'><a href="/">Home</a></li>
                         <li className='nav-link'><a href="/programs">Programs</a></li>
-                        <li className='nav-link'><a href="#">Partner opportunities</a></li>
+                        <li className='nav-link'><a href="/partner-opportunities">Partner opportunities</a></li>
                         <li className='nav-link'><a href="#">Team & Volunteers</a></li>
                         <li className='nav-link'><a href="#">Contact</a></li>
                         <li><button className="btn btn-outline-primary">Donate</button></li>
@@ -38,7 +38,7 @@ export default function Navbar() {
                     <ul>
                         <li className='nav-link'><a href="/">Home</a></li>
                         <li className='nav-link'><a href="/programs">Programs</a></li>
-                        <li className='nav-link'><a href="#">Partner opportunities</a></li>
+                        <li className='nav-link'><a href="/partner-opportunities">Partner opportunities</a></li>
                         <li className='nav-link'><a href="#">Team & Volunteers</a></li>
                         <li className='nav-link'><a href="#">Contact</a></li>
                         <li><button className="btn btn-outline-primary">Donate</button></li>
