@@ -20,9 +20,9 @@ export default function Footer() {
                 <div className="links">
                     <h1 className='fs-4'>Links</h1>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Partner program</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/programs">Programs</a></li>
+                        <li><a href="/partner-opportunities">Partner program</a></li>
                         <li><a href="#">Teams & Volunteers</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
