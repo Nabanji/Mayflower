@@ -5,6 +5,10 @@
     outline: none;
 }
 
+.sidebar-btn{
+    color: #07c3f6;
+}
+
 .partner-intro {
     height: calc(100vh - 140px);
 }
@@ -60,4 +64,400 @@
 
 .partner-image img {
     height: 100%;
+}
+
+.donate {
+    width: 100%;
+    background-color: #bfe9f5;
+    /* border: 1px solid black; */
+}
+
+.donate-section {
+    width: 50%;
+    padding: 4px 30px;
+}
+
+.donate-section h1{
+    font-size: 4rem;
+    width: 80%;
+    /* border:  1px solid black; */
+}
+
+.donate-section p {
+    width: 90%;
+    font-size: 1.4rem;
+}
+
+.donate-section button {
+    width: 160px;
+    font-size: 1.2rem;
+    background: orangered;
+    border: 1px solid orangered;
+    padding: 12px 22px;
+    transition: .6s all ease;
+}
+
+.donate-section button:hover {
+    color: white;
+}   
+
+.donate-img{
+    position: relative;
+    max-width: 30%;
+    height: auto;
+}
+
+.donate-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.donate-img button {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    border: 1px solid #07c3f6;
+    background-color: #07c3f6;
+    padding: 8px 30px;
+    transition: .6s all ease;
+}
+
+.donate-img button:hover {
+    background: #07c3f6;
+    color: #fff;
+}
+
+.form {
+    height: 60vh;
+    /* border: 1px solid black; */
+}
+
+.form-heading {
+    width: 50%;
+    height: 100%;
+    padding: 4px 12px;
+    /* border: 1px solid black; */
+}
+
+.form-heading button {
+    width: 160px;
+    padding: 8px 22px;
+    border: 1px solid orangered;
+    background: none;
+    cursor: pointer;
+    transition: .6s all ease-in-out;
+}
+
+.form-heading button:hover {
+    background: orangered;
+    color: #fff;
+}
+
+form {
+    width: 50%;
+    padding: 4px 12px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+form div label {
+    margin-left: 6px;
+    font-size: 1.5rem;
+}
+
+form div input,
+form div textarea {
+    margin: 4px;
+    padding: 6px 8px;
+    border: 1px solid lightgray;
+}  
+
+form div button {
+    width: 160px;
+    background: #fff;
+    border: 1px solid #07c3f6;
+    padding: 12px 22px;
+    font-size: 1.1rem;
+    transition: .6s all ease;
+}
+
+form div button:hover {
+    background: #07c3f6;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 567px) {
+
+    .partner-intro {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .partner-heading {
+        width: 100%;
+    }
+
+    .partner-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .partner-heading p {
+        font-size: 1.2rem;
+    }
+
+    .partner-btns {
+        margin: 6px 0px;
+        flex-wrap: wrap;
+    }
+
+    .partner-btns button {
+        padding: 8px 18px;
+    }
+
+    .partner-image {
+        width: 100%;
+        height: 50%;
+    }
+
+    .partner-btns .donate-btn {
+        width: 140px;
+        background-color: orangered;
+        border: 1px solid orangered;
+    }
+    
+    .partner-btns .volunteer-btn {
+        width: 180px;
+        border: 1px solid #07c3f6;
+    }
+
+    .partner-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .partner-image img {
+        width: 100%;
+    }
+
+    .donate {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .donate-section {
+        width: 100%;
+        padding: 4px 8px;
+    }
+
+    .donate-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .donate-section p {
+        font-size: 1.2rem;
+    }
+
+    .donate-section button {
+        padding: 6px 16px;
+        font-size: 1rem;
+    }
+
+    .donate-img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .donate-img img {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .form-heading {
+        width: 100%;
+    }
+
+    .form-heading p {
+        font-size: 1rem !important;
+    }
+
+    form {
+        width: 100%;
+        padding: 4px 8px;
+    }
+    
+    form div label {
+        font-size: 1.2rem;
+    }
+
+    form div input,
+    form div textarea {
+        padding: 2px 6px;
+    }  
+    
+    form div button {
+        width: 100px;
+        border: 1px solid #07c3f6;
+        padding: 6px 11px;
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+
+    .partner-intro {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .partner-heading {
+        width: 100%;
+    }
+
+    .partner-image {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .partner-image img {
+        width: 100%;
+    }
+
+    .donate {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .donate-section {
+        width: 100%;
+        padding: 4px 8px;
+    }
+
+    .donate-section h1 {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    .donate-section button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .donate-img{
+        max-width: 60%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .form {
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form-heading {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form div button {
+        padding: 6px 12px;
+        margin-left: 4px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .partner-intro {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .partner-heading {
+        width: 100%;
+    }
+
+    .partner-heading h1 {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    .partner-heading p {
+        padding-left: 80px;
+    }
+
+    .partner-btns {
+        justify-content: center;
+    }
+
+    .partner-image {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .partner-image img {
+        width: 100%;
+    }
+
+    .donate {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .donate-section {
+        width: 100%;
+        padding: 4px 120px;
+    }
+
+    .donate-section h1 {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    .donate-section button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .donate-img{
+        max-width: 60%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .form {
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form-heading {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form div button {
+        padding: 6px 12px;
+        margin-left: 4px;
+    }
 }
