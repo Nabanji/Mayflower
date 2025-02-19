@@ -25,8 +25,7 @@ export default function Navbar() {
                         <li className='nav-link'><a href="/">Home</a></li>
                         <li className='nav-link'><a href="/programs">Programs</a></li>
                         <li className='nav-link'><a href="/partner-opportunities">Partner opportunities</a></li>
-                        <li className='nav-link'><a href="#">Team & Volunteers</a></li>
-                        <li className='nav-link'><a href="#">Contact</a></li>
+                        <li className='nav-link'><a href="/team">Team & Volunteers</a></li>
                         <li><button className="btn btn-outline-primary">Donate</button></li>
                     </ul>
                 </div>
@@ -39,8 +38,7 @@ export default function Navbar() {
                         <li className='nav-link'><a href="/">Home</a></li>
                         <li className='nav-link'><a href="/programs">Programs</a></li>
                         <li className='nav-link'><a href="/partner-opportunities">Partner opportunities</a></li>
-                        <li className='nav-link'><a href="#">Team & Volunteers</a></li>
-                        <li className='nav-link'><a href="#">Contact</a></li>
+                        <li className='nav-link'><a href="/team">Team & Volunteers</a></li>
                         <li><button className="btn btn-outline-primary">Donate</button></li>
                     </ul>
                     <button className="close-btn" onClick={toggleSidebar}>

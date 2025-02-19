@@ -96,6 +96,10 @@
         flex-direction: column;
     }
 
+    .intro {
+        padding: 0px 6px;
+    }
+
     .links {
         margin-top: 26px;
     }
