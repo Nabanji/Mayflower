@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className='nav-bar'>
                     <div className='brand d-flex align-items-center gap-2'>
                         <img className='logo' src={MayflowerLogo} alt="Mayflower Logo" />
-                        <a className="navbar-brand fs-5" href="#">Mayflower Children's<br />
+                        <a className="navbar-brand fs-5" href="/">Mayflower Children's<br />
                         <span style={{color: '#07c3f6'}}>Foundation</span></a>
                     </div>
                     {/* Desktop Navbar Links */}

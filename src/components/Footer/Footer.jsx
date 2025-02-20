@@ -3,11 +3,19 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 export default function Footer() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1500, // Animation duration in milliseconds
+            once: true, // Whether animation should happen only once
+        });
+    }, []);
 
     return (
         <section className="footer d-flex flex-column pt-3" data-aos='fade-up'>
@@ -38,9 +46,9 @@ export default function Footer() {
             <div className='socials d-flex justify-content-between align-items-center px-4'>
                 <h1 className='fs-4'>Get connected with us on social networks</h1>
                 <div className="social-links d-flex gap-3">
-                    <FaInstagram className='social-icon' size={24} />
-                    <FaTwitter className='social-icon' size={24}/>
-                    <FaFacebookF className='social-icon' size={24} />
+                    <a href="https://www.instagram.com/mayflower_kids/" target='_blank'><FaInstagram className='social-icon' size={24} /></a>
+                    <a href="https://x.com/Mayflower__Kids" target='_blank'><FaTwitter className='social-icon' size={24} /></a>
+                    <a href=""><FaFacebookF className='social-icon' size={24} /></a>
                 </div>
             </div>
 
