@@ -72,6 +72,10 @@
     padding: 2px 30px;
 }
 
+.social-links a {
+    color: black;
+}
+
 .social-icon {
     transition: .6s all ease;
     cursor: pointer;
