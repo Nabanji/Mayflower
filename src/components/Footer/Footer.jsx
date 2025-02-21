@@ -32,6 +32,7 @@ export default function Footer() {
                         <li><a href="/programs">Programs</a></li>
                         <li><a href="/partner-opportunities">Partner program</a></li>
                         <li><a href="/team">Teams & Volunteers</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div className="location">

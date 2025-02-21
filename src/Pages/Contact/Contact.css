@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact-header p {
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-form form,
+.contact-location {
+    width: 50%;
+}
+
+.contact-form form {
+    width: 70%;
+}
+
+.contact-form form div label {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+.contact-form form button {
+    padding: 12px 40px;
+    background: none;
+    border: none;
+    background-color: orangered;
+    transition: all .6s ease;
+}
+
+.contact-form form button:hover {
+    color: white;
+}
+
+.contact-location h1 {
+    font-size: 1.5rem;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    padding: 12px 8px;
+}
+
+.icon {
+    color: orangered;
+}
+
+.detail p {
+    margin: auto 12px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact-header p {
+        width: 60%;
+    }
+    
+    .contact-header p {
+        width: 60%;
+    }
+
+    .contact-form {
+        flex-direction: row;
+    }
+
+    .contact-form form,
+    .contact-location {
+        width: 50%;
+    }
+
+    .contact-form form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-header p {
+        width: 80%;
+    }
+
+    .contact-form {
+        flex-direction: column-reverse;
+    }
+
+    .contact-form form,
+    .contact-location {
+        width: 100%;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 567px) {
+    .contact-header p {
+        width: 90%;
+    }
+
+    .contact-form {
+        flex-direction: column-reverse;
+    }
+
+    .contact-form form,
+    .contact-location {
+        width: 100%;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+    
+}
