@@ -256,7 +256,7 @@
 
     .about {
         height: fit-content;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .about-image {
