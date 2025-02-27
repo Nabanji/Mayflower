@@ -3,7 +3,7 @@ import './Partner.css'
 import Navbar from '../../components/Navbar/Navbar';
 import PartnerImage from '../../assets/about.png';
 import Footer from '../../components/Footer/Footer';
-import footballRon from '../../assets/footballRon.png';
+import footballRon from '../../assets/footballron.png';
 
 import { FaLongArrowAltRight } from "react-icons/fa";
 
