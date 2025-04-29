@@ -25,12 +25,25 @@
     color: #07c3f6;
 }
 
+.nav-links {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 10 !important;
+    border: 1px gray !important;
+}
+
+.dropdown-menu li {
+    margin: 6px 0px;
+}
+
 .sidebar-btn {
     display: none;
 }
 
 .close-btn {
-    /* position: absolute; */
     left: 0;
     margin-left: 4px;
     background: none;

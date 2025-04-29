@@ -23,11 +23,21 @@ export default function Navbar() {
                     {/* Desktop Navbar Links */}
                     <ul className="nav-links">
                         <li className='nav-link'><a href="/">Home</a></li>
-                        <li className='nav-link'><a href="/programs">Programs</a></li>
+                        <li className='nav-link'>
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/programs">Mayflower Kids FC Sports Program</a></li>
+                                <li><a className="dropdown-item" href="#">Books and Beyond Education Program</a></li>
+                                <li><a className="dropdown-item" href="#">Empower Her sanitary and inner wear program</a></li>
+                                <li><a className="dropdown-item" href="#">Taste of hope feeding program</a></li>
+                            </ul>
+                        </li>
                         <li className='nav-link'><a href="/partner-opportunities">Partner opportunities</a></li>
                         <li className='nav-link'><a href="/team">Team & Volunteers</a></li>
                         <li className='nav-link'><a href="/contact">Contact Us</a></li>
-                        <li><button className="btn btn-outline-primary">Donate</button></li>
+                        {/* <li><button className="btn btn-outline-primary">Donate</button></li> */}
                     </ul>
                 </div>
                 {/* Sidebar Toggle Button */}
@@ -41,7 +51,6 @@ export default function Navbar() {
                         <li className='nav-link'><a href="/partner-opportunities">Partner opportunities</a></li>
                         <li className='nav-link'><a href="/team">Team & Volunteers</a></li>
                         <li className='nav-link'><a href="/contact">Contact Us</a></li>
-                        <li><button className="btn btn-outline-primary">Donate</button></li>
                     </ul>
                     <button className="close-btn" onClick={toggleSidebar}>
                         <FaTimes className='close-btn' size={24} />
