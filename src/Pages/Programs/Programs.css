@@ -83,7 +83,8 @@
 }
 
 .program-description h4 {
-    font-size: 26px;
+    font-size: 20px;
+    color: orangered;
 }
 
 .program-description p {
@@ -91,7 +92,7 @@
 }
 
 .program-description button {
-    background: orangered;
+    background: #fff;
     width: 150px;
     padding: 6px 12px;
     border: 2px solid orangered;
@@ -99,7 +100,7 @@
 }
 
 .program-description button:hover {
-    background: none;
+    background: orangered;
 }
 
 
