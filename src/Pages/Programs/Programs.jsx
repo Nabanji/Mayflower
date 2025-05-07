@@ -10,23 +10,27 @@ export default function Programs() {
 
     const ourPrograms = [
         {
+            id: 'sports-program',
             program: 'Mayflower Kids FC Sports program',
-            description: 'Join the Mayflower Sports Program and unleash your athletic potential! Whether you\'re into soccer, basketball, track, or other exciting sports, our program offers top-tier coaching, competitive opportunities, and a fun, supportive environment for all skill levels. Stay active, build teamwork, and push your limits—because every champion starts somewhere!',
+            description: 'Join the Mayflower Kids FC Sports Program and unleash your athletic potential! Whether you\'re into soccer, basketball, track, or other exciting sports, our program offers top-tier coaching, competitive opportunities, and a fun, supportive environment for all skill levels. Stay active, build teamwork, and push your limits—because every champion starts somewhere!',
             button: 'Read More',
         },
         {
+            id: 'education-program',
             program: 'Books and Beyond Education program',
-            description: 'Join the Mayflower Sports Program and unleash your athletic potential! Whether you\'re into soccer, basketball, track, or other exciting sports, our program offers top-tier coaching, competitive opportunities, and a fun, supportive environment for all skill levels. Stay active, build teamwork, and push your limits—because every champion starts somewhere!',
+            description: 'Unlock a world of knowledge with the Books and Beyond Education Program! We provide academic support, reading materials, mentorship, and workshops to help young minds grow and thrive. Whether it’s through tutoring, creative storytelling, or digital literacy, we’re here to empower the next generation with the tools they need to succeed in and out of the classroom.',
             button: 'Read More',
         },
         {
+            id: 'empower-her-program',
             program: 'Empower Her sanitary and inner wear program', 
-            description: 'Join the Mayflower Sports Program and unleash your athletic potential! Whether you\'re into soccer, basketball, track, or other exciting sports, our program offers top-tier coaching, competitive opportunities, and a fun, supportive environment for all skill levels. Stay active, build teamwork, and push your limits—because every champion starts somewhere!',
+            description: 'The Empower Her program is dedicated to promoting dignity, health, and self-confidence in young girls and women. We provide access to essential sanitary products and innerwear, along with educational workshops on menstrual health and hygiene. Through support and awareness, we aim to break taboos and create safe, empowering spaces for every girl to thrive.',
             button: 'Read More',
         },
         {
+            id: 'taste-of-hope-program',
             program: 'Taste of Hope feeding program',
-            description: 'Join the Mayflower Sports Program and unleash your athletic potential! Whether you\'re into soccer, basketball, track, or other exciting sports, our program offers top-tier coaching, competitive opportunities, and a fun, supportive environment for all skill levels. Stay active, build teamwork, and push your limits—because every champion starts somewhere!',
+            description: 'Taste of Hope is our community feeding program aimed at tackling hunger and food insecurity. We provide nutritious meals to children and families in need, ensuring that no one is left behind. By combining love, nutrition, and hope, we strive to make every plate a step toward a healthier, brighter future.',
             button: 'Read More',
         }
     ]
@@ -57,7 +61,12 @@ export default function Programs() {
                             <div className="program-description ps-3">
                                 <h4 className='my-3'>{program.program}</h4>
                                 <p>{program.description}</p>
-                                <button className='mb-3'>{program.button}</button>
+                                <button 
+                                    className='mb-3'
+                                    onClick={() => window.location.href = `/programs/${program.id}`}
+                                   >
+                                    {program.button}
+                                </button>
                             </div>
                         </div>
                     ))}
