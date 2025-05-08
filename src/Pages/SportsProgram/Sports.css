@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.sidebar-btn {
+    color: white;
+}
+
+.sports-program-intro {
+    height: 350px;
+    background: url('../../assets/placeholder.png'), rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border: 1px solid black;
+}
+
+.sports-program-intro ul {
+    gap: 20px;
+}
+
+.sports-program-intro li a {
+    color: white;
+}
+
+.sports-program-intro .navbar-brand {
+    color: white;
+}
+
+.sports-program-intro .btn {
+    color: white;
+    border: none;
+    background-color: #07c3f6;
+}
+
+.sports-program-heading h6 {
+    color: #fff;
+    margin: 60px auto;
+    padding: 0px 7rem;
+    font-size: 3rem;
+}
+
+.sports-intro div {
+    width: 45%;
+}
+
+.sports-description h4 {
+    color: orangered;
+}
+
+.sports-intro .sports-image {
+    object-fit: cover;
+}
