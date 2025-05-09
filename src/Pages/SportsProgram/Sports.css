@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.sidebar-btn {
+    color: white;
+}
+
+.sports-program-intro {
+    height: 350px;
+    background: url('../../assets/placeholder.png'), rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border: 1px solid black;
+}
+
+.sports-program-intro ul {
+    gap: 20px;
+}
+
+.sports-program-intro li a {
+    color: white;
+}
+
+.sports-program-intro .navbar-brand {
+    color: white;
+}
+
+.sports-program-intro .btn {
+    color: white;
+    border: none;
+    background-color: #07c3f6;
+}
+
+.sports-program-heading h6 {
+    color: #fff;
+    margin: 60px auto;
+    padding: 0px 7rem;
+    font-size: 3rem;
+}
+
+.sports-intro div {
+    width: 45%;
+}
+
+.sports-description h4 {
+    color: orangered;
+}
+
+.sports-intro .sports-image {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 567px) {
+
+   .sports-program-heading h6 {
+    padding: 4px 12px;
+    margin-top: 40px;
+    font-size: 28px !important;
+   } 
+
+   .sports-intro {
+    flex-direction: column;
+   }
+
+   .sports-intro div {
+    width: 100%;
+   }
+
+   .sports-description p {
+    font-size: 16px !important;
+   }
+
+   .sports-gallery-images img {
+    width: 90% !important;
+   } 
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+    .sports-program-heading h6 {
+    padding: 4px 22px;
+    font-size: 30px !important;
+   }
+
+   .sports-intro {
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .sports-intro div {
+    width: 100%;
+   }
+
+   .sports-image img {
+    width: 100%;
+   }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sports-program-heading h6 {
+    padding: 4px 22px;
+    font-size: 30px !important;
+   }
+
+   .sports-intro {
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .sports-intro div {
+    width: 100%;
+   }
+
+   .sports-image img {
+    width: 70%;
+   }
+}
