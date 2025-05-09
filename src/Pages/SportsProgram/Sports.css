@@ -55,3 +55,70 @@
 .sports-intro .sports-image {
     object-fit: cover;
 }
+
+@media screen and (max-width: 567px) {
+
+   .sports-program-heading h6 {
+    padding: 4px 12px;
+    margin-top: 40px;
+    font-size: 28px !important;
+   } 
+
+   .sports-intro {
+    flex-direction: column;
+   }
+
+   .sports-intro div {
+    width: 100%;
+   }
+
+   .sports-description p {
+    font-size: 16px !important;
+   }
+
+   .sports-gallery-images img {
+    width: 90% !important;
+   } 
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+    .sports-program-heading h6 {
+    padding: 4px 22px;
+    font-size: 30px !important;
+   }
+
+   .sports-intro {
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .sports-intro div {
+    width: 100%;
+   }
+
+   .sports-image img {
+    width: 100%;
+   }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sports-program-heading h6 {
+    padding: 4px 22px;
+    font-size: 30px !important;
+   }
+
+   .sports-intro {
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .sports-intro div {
+    width: 100%;
+   }
+
+   .sports-image img {
+    width: 70%;
+   }
+}
